@@ -1,0 +1,459 @@
+$primary-font:'Poppins', sans-serif;
+$primary-color:#fd4d5a;
+$white-color:#fff;
+
+
+@mixin flex-property{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@mixin my-button{
+    button{
+        padding: .5rem 2.3rem;
+        margin-right: 1.2rem;
+        font-size: 1.3rem;
+        border: 0;
+        font-family: $primary-font;
+       }
+
+}
+
+
+html{
+    font-size: 15px;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:$primary-font ;
+
+
+}
+.content{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+header{
+    background-image: url("../images/banner.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    .toggle-button{
+        color: white;
+        display: none
+    }
+
+    
+    ul{
+        @include flex-property;
+        text-align: center;
+        list-style-type:none;
+        align-items: center;
+        color:#fff ;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+
+            a {
+                text-decoration: none;
+                color: $white-color;
+            }
+        
+    
+             li:nth-child(1)  
+               {
+                 margin-right: 11rem;
+                 position: relative;
+                 bottom: 1rem;
+                 }   
+
+    }
+
+ .banner-sideimage{
+      @include flex-property();
+    .main-contentbox{
+        width: 40%;
+        margin-top: 10rem;
+        margin-left: 5rem;
+        @include my-button;
+
+           h1:nth-child(1){
+                font-size: 2.5rem;
+                font-weight: 300;
+                color: $primary-color;
+                display: block;
+           }
+           h1:nth-child(2){
+            font-size: 3rem;
+            font-weight: 800;
+            color: $white-color;
+           }
+
+           p{
+               font-size: 1.1rem;
+               color: $white-color;
+               padding-bottom: 1.5rem;
+           }
+
+           .butt-one{
+               background-color: $primary-color;
+               color: $white-color;
+           }
+
+           .butt-two{
+               background-color: $white-color;
+               color: red
+           }
+
+    }
+
+  .side-image {
+      width: 50%;
+      margin-top: 4rem;
+    }
+
+  .side-image img{
+      width: 100%;
+    }
+
+    
+
+  }
+
+}
+
+.the-twoboxes{
+    color: black;
+
+    .first-box{
+        padding: 2rem 0;
+        @include my-button;
+        
+        h1{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            padding: 2rem 0;
+        }
+
+        .shoe-img{
+            width: 40%;
+            display: inline-block;
+            border: 1px solid #fff;
+            box-shadow: 10px 10px 5px  grey;
+            box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+            padding: 8rem 4.5rem;
+        }
+
+        .shoe-img img{
+            width:100% ;
+        }
+
+        .shoe-img-1{
+            position: relative;
+            left: 10rem;
+            z-index: 0;
+            background: #fff;
+        }
+
+        .shoe-img-2{
+            position: relative;
+            top:7rem;
+            left: 3rem;
+            z-index: -1;
+           
+        }
+
+        .shoe-button{
+            display: block;
+            margin-top: 3rem;
+            margin-left: 7rem;
+            background-color: $primary-color;
+            color: $white-color; 
+        }
+    }
+
+    .second-box{
+        h1{
+            font-size: 2.5rem;
+        }
+
+        p{
+            font-size: 1.3rem;
+            padding: 2rem 0;
+        }
+
+        .shoe-img-3{
+            @include flex-property;
+            padding: 4rem 0 4rem 8rem;
+            background-color: #eae7e7;
+            margin: 3rem 0;
+            @include my-button();
+            
+
+            img{
+                width: 45%;
+            }
+           
+            h1{
+                margin-right:auto ;
+                font-size: 3.8rem;
+                padding-left: 10rem; 
+                
+                .color-left{
+                    color: $primary-color;
+                }
+            }
+
+            button{
+                display: block;
+                background-color: $primary-color;
+                color: $white-color;
+                margin-top: 1.6rem;
+            }
+
+
+        }
+    }
+
+
+}
+
+.six-imagebox{
+    width: 100%;
+    background-color: $primary-color;
+    padding: 6rem 0;
+    @include my-button();
+
+    
+    .main-for-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+       button{
+           display: block;
+           background-color: black;
+           color: $white-color;
+           padding: 1rem 3rem;
+       }
+
+        .six-img-box{
+            width: 30%;
+            text-align: center;
+            margin: 2rem 0;
+            background-color: $white-color;
+            padding: 4rem 0;
+            position: relative;
+
+            img{
+                width: 70%;
+            }
+
+            .shoe-price{
+                position: absolute;
+                 right: 0;
+                 bottom: 0;
+                 padding-right: 1rem;
+                 padding-bottom: 1rem;
+            }
+           
+
+             .stars{
+                 position: absolute;
+                 left: 0;
+                 bottom: 0;
+                 text-align: left;
+                 padding-left: 1rem;
+                 padding-bottom: 1rem;
+                 width: 50%;
+
+                 img{
+                     width: 10%;
+                     margin-right: .3rem;
+                 }
+                
+             }
+
+            p{
+                font-size: 1.5rem;
+                padding-bottom: 1.5rem;
+            }
+        }
+    }
+
+}
+
+.contact-image{
+    @include flex-property();
+    margin: 5rem auto;
+    width: 100%;
+    overflow: hidden;
+    h1{
+        color: black;
+        width: 100%;
+        margin-left: 14rem;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .contact-box{
+        width: 40%;
+        background-color: #666666;
+        text-align: center;
+        @include my-button();
+        margin-left: auto;
+        padding-top: 1rem;
+     
+
+      
+    
+        input[type=text] {
+            width:90%;
+            padding: 1rem 3rem;
+            margin: .8rem 0;
+            border: none;
+            color: white;
+        }
+
+        textarea {
+            width: 90%;
+            padding: 5rem 6rem;
+            box-sizing: border-box;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            background-color: #f8f8f8;
+            font-size: 16px;
+            resize: none;
+            overflow:hidden;
+          }
+
+          button{
+              display: block;
+              margin: 1rem auto;
+              background-color: $primary-color;
+              color: #fff;
+          }
+
+    }
+        
+        .contact-imagebox {
+          width: 45%;
+          margin-left: 5%;
+          
+        }
+}
+
+footer{
+    width: 100%;
+    background-color: $primary-color;
+    text-align: center;
+    padding: 1rem 0;
+    color: #fff;
+    letter-spacing: .1rem;
+}
+
+
+
+/*media*/
+
+@media(max-width:768px){
+    .toggle-button{
+        display: block;
+        position: absolute;
+        z-index: 99;
+        font-size: 5rem;
+        color: #fff;
+    }
+
+    header ul{
+        display: none;
+    }
+
+    header .banner-sideimage .main-contentbox{
+        width: 100%;
+       
+    }
+
+    .the-twoboxes {
+        .second-box{
+            padding: 2rem 2rem;
+    
+            .shoe-img-3 {
+                h1{
+                    padding-left: 6rem;
+                }
+            img{
+                width: 80%;
+            }
+          }
+        }
+    
+    
+    .first-box {
+        padding: 2rem 2rem;
+        .shoe-img-1{
+            left: 0;
+            width: 100%;
+        }
+
+        .shoe-img-2{
+            top:0;
+            left: 0;
+            width: 100%;
+            margin-top: 2rem;
+        }
+
+        .shoe-button{
+            margin: 3rem auto 0 auto;
+        }
+    }
+
+}
+
+
+.six-imagebox .main-for-flex .six-img-box{
+    width: 45%;
+}
+
+.contact-image .contact-box{
+    width: 90%;
+    margin: 1rem auto;
+}
+
+}
+
+@media(max-width:600px){
+    header .banner-sideimage .side-image {
+        margin: 1rem auto;
+    }
+    .six-imagebox .main-for-flex .six-img-box{
+        width: 90%
+    }
+    .contact-image h1{
+        width: auto;
+        display: inline-block;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

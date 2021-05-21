@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Doppio+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
+</head>
+<body>
+    <?php 
+        include_once("php/index.php")
+    ?>
+    <aside>
+        <nav>
+            <li><a href="#content-d">About</a></li>
+            <li><a href="#project-d">Project</a></li>
+            <li><a href="#contact-d">Contact</a></li>
+        </nav>
+    </aside>
+    <!-- navigation start -->
+  <header>
+    <nav class="header-nav">
+        <ul class="clearfix">
+            <li><a href="#content-d">About</a></li>
+            <li><a href="#project-d">Project</a></li>
+            <li><a href="#contact-d">Contact</a></li>
+           
+        </ul>
+        <div class="burger-icon"><i class="fas fa-bars"></i></div>
+    </nav>
+  </header>
+
+<!-- navigation ends -->
+
+<!-- intro starts -->
+
+<section class="intro" id="banner-u">
+    <div class="picture clearfix">
+    <img src="images/fraame.jpg" class="frame-image " alt="">
+    <h2 class="animate__animated animate__backInRight">Hello!
+        My name is Neeraj.
+        I'm a Front-End Web Developer.</h2>
+        </div>
+        <div class="arrow arrow-one"><a href="#content-d"><span class="fa fa-angle-double-down content-down"></span></a></div>
+</section>
+
+
+<!-- intro ends -->
+<!-- project starts -->
+
+<section class="projects clearfix" id="project-d">
+  <h1>PROJECTS</h1>
+  <div class="projectGrid">
+    <div class="card" data-aos="zoom-out-left" data-aos-duration="1000">
+
+      <img src="images/hielo.png" alt="#">
+      <div class="hover">
+        <p><span>Made using</span> Html5, Css3 , Bootstrap </p>
+        <a href="sendingFiles/heilo/index.html" class="hover-button">Click Here</a>
+      </div>
+    </div>
+    <div class="card" data-aos="zoom-out-right" data-aos-duration="1000">
+
+      <img src="images/pillo.png" alt="#">
+      <div class="hover">
+        <p><span>Made using</span> Sass, Html5, Css3, media query, jquery</p>
+        <a href="sendingFiles/pullo/index.html" class="hover-button">Click Here</a>
+      </div>
+    </div>
+    <div class="card" data-aos="zoom-out-up" data-aos-duration="1000">
+
+      <img src="images/pomato.png" alt="#">
+      <div class="hover">
+        <p><span>Made using</span>  Sass,Html5, Css3 , Media query</p>
+        <a href="sendingFiles/pomato/index.html" class="hover-button">Click Here</a>
+      </div>
+    </div>
+    <div class="card" data-aos="zoom-out-down" data-aos-duration="1000">
+
+      <img src="images/prism.png" alt="#">
+      <div class="hover">
+        <p><span>Made using</span> Html5, Css3 , Media query , Bootstrap</p>
+        <a href="sendingFiles/Prism/index.html" class="hover-button">Click Here</a>
+      </div>
+    </div>
+
+
+
+</div>
+  <div class="arrow arrow-three"><a href="#contact-d"><span class="fa fa-angle-double-down contact-down"></a><a href="#banner-u"><span class="fa fa-angle-double-up content-up"></span></a></div>
+</section>
+
+<!-- project ends -->
+<!-- about me -->
+
+<section class="about-me inner clearfix" id="content-d">
+    <article class="int">
+        <p>私は"Web developer"のニラジと申します。 鶴岡工業高等専門学校でITを学び、2021年3月に卒業しました。学校教育の本やインターネットを利用し、自身で"web development"について学習したことで、その分野への関心が深まりました<br><br>
+           <span class="main-point"> そのため、"ウェブ開発の就職"に従事したいと考えております。</span><br><br>
+          
+
+       趣味は、読書、旅行、テクノロジーに関する新しい知識を得ることです。語学では、英語を流暢に話すことができ、日本語能力試験のN2レベルに合格しました。。
+        </p>
+
+        
+
+
+    </article>
+    <article class="hobby">
+            <div class="skills">
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+
+                    <div class="skill-name">HTML</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="95">
+                            <span>95</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">CSS</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="95">
+                            <span>95</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Javascript</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="50">
+                            <span>50</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Jquery</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="80" >
+                            <span>80</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Sass</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="95">
+                            <span>95</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Bootstrap</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="90">
+                            <span>90</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">C</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60">
+                            <span>60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Java</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="60">
+                            <span>60</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">PHP-Server side</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="40">
+                            <span>40</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill" data-aos="fade-left" data-aos-duration="2000">
+                    <div class="skill-name">Adobe photoshop</div>
+                    <div class="skill-bar">
+                        <div class="skill-per" per="70">
+                            <span>70</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </article>
+
+
+
+
+</section>
+<div class="arrow arrow-two"><a href="#banner-u"><span class="fa fa-angle-double-up banner-up"></span></a></div>
+
+
+<!-- contact form starts -->
+<section class="contact" id="contact-d">
+    <div class="inner-content">
+        <h1>CONTACT ME</h1>
+        <h3>You can write me a message or find me on socialmedia.</h3>
+    </div>
+    <div class="form">
+    <!-- onsubmit="return validateForm();" -->
+    <form  onsubmit="return validateForm();">
+        <label for="name">Name</label>
+        <input type="text" id="fname" name="name" placeholder="Your name.."><br>
+        <p class="error" id="errorName">Please enter a name</p>
+        <label for="Email">Email</label>
+        <input type="text" id="lname" name="Email" placeholder="Email"><br>
+        <p class="error" id="errorEmail">Please enter a valid Mail</p>
+        <label for="message">Message</label>
+       <textarea id="subject" name="message" placeholder="Write something.." style="height:200px"></textarea > <br>
+
+       <input type="submit" value="Send" name="contact-submit"> 
+      </form>
+
+      <section class="social-media clearfix">
+        <a href = "mailto: neerajbhtt91@gmail.com"> <span  style="color: #fff;"class="fas fa-envelope "></span></a>
+        
+        <a href="https://www.facebook.com/neeraj.bhatt.1088" target="_blank"><span style="color: #fff;"class="fab fa-facebook-square"></span></a>
+        <span class="fab fa-line " style="color: #fff;"></span>
+
+      </section>
+    </div>
+    </section>
+    <div class="arrow  arrow-four"><a href="#project-d"><span  style="color: #fff;"  class="fa fa-angle-double-up project-up"></span></a></div>
+
+<!-- contact form ends -->
+<!-- footer starts -->
+
+<footer>
+    <div class="UP-SIGN"><a href="#banner-u">UP</a></div>
+    <h1>@BHATT</h1>
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/main.js" charset="utf-8"></script>
+
+  
+</body>
+</html>

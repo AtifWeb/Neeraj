@@ -1,0 +1,47 @@
+footer{
+    background-color: black;
+        color: #fff;
+    .footer-content{
+        @include max-value();
+        text-align: center;
+
+        h1{
+            font-weight: 400;
+            padding-top: 4rem;
+        }
+        p{
+            padding-top: 3rem;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            font-weight: 300;
+        }
+        .social-media{
+            margin: 2rem 0;
+                .fa{
+                    width: 50px;
+                    font-size: 1.3rem;
+                    margin-right: 1rem;
+                    padding: 1rem;
+                    border: 1px solid #fff;
+                    border-radius: 100%;
+                }
+
+                .fa:hover{
+                    background-color: red;
+                    transition: all 0.5s;
+                    border: 0;
+                    cursor: pointer;
+                }
+        }
+    }
+   nav{
+       ul{
+        width: 50%;
+        margin: 0 auto;
+       list-style-type: none;
+       @include flex-property();
+       justify-content: space-evenly;
+       font-size: 1.2rem;
+       }
+   }
+}

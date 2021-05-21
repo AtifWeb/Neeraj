@@ -1,0 +1,459 @@
+html {
+  font-size: 15px;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: url("../images/banner.png");
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+header .toggle-button {
+  color: white;
+  display: none;
+}
+
+header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+header ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header ul li:nth-child(1) {
+  margin-right: 11rem;
+  position: relative;
+  bottom: 1rem;
+}
+
+header .banner-sideimage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .banner-sideimage .main-contentbox {
+  width: 40%;
+  margin-top: 10rem;
+  margin-left: 5rem;
+}
+
+header .banner-sideimage .main-contentbox button {
+  padding: .5rem 2.3rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header .banner-sideimage .main-contentbox h1:nth-child(1) {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fd4d5a;
+  display: block;
+}
+
+header .banner-sideimage .main-contentbox h1:nth-child(2) {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+}
+
+header .banner-sideimage .main-contentbox p {
+  font-size: 1.1rem;
+  color: #fff;
+  padding-bottom: 1.5rem;
+}
+
+header .banner-sideimage .main-contentbox .butt-one {
+  background-color: #fd4d5a;
+  color: #fff;
+}
+
+header .banner-sideimage .main-contentbox .butt-two {
+  background-color: #fff;
+  color: red;
+}
+
+header .banner-sideimage .side-image {
+  width: 50%;
+  margin-top: 4rem;
+}
+
+header .banner-sideimage .side-image img {
+  width: 100%;
+}
+
+.the-twoboxes {
+  color: black;
+}
+
+.the-twoboxes .first-box {
+  padding: 2rem 0;
+}
+
+.the-twoboxes .first-box button {
+  padding: .5rem 2.3rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.the-twoboxes .first-box h1 {
+  font-size: 2.5rem;
+}
+
+.the-twoboxes .first-box p {
+  font-size: 1.3rem;
+  padding: 2rem 0;
+}
+
+.the-twoboxes .first-box .shoe-img {
+  width: 40%;
+  display: inline-block;
+  border: 1px solid #fff;
+  -webkit-box-shadow: 10px 10px 5px  grey;
+          box-shadow: 10px 10px 5px  grey;
+  -webkit-box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+          box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+  padding: 8rem 4.5rem;
+}
+
+.the-twoboxes .first-box .shoe-img img {
+  width: 100%;
+}
+
+.the-twoboxes .first-box .shoe-img-1 {
+  position: relative;
+  left: 10rem;
+  z-index: 0;
+  background: #fff;
+}
+
+.the-twoboxes .first-box .shoe-img-2 {
+  position: relative;
+  top: 7rem;
+  left: 3rem;
+  z-index: -1;
+}
+
+.the-twoboxes .first-box .shoe-button {
+  display: block;
+  margin-top: 3rem;
+  margin-left: 7rem;
+  background-color: #fd4d5a;
+  color: #fff;
+}
+
+.the-twoboxes .second-box h1 {
+  font-size: 2.5rem;
+}
+
+.the-twoboxes .second-box p {
+  font-size: 1.3rem;
+  padding: 2rem 0;
+}
+
+.the-twoboxes .second-box .shoe-img-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 4rem 0 4rem 8rem;
+  background-color: #eae7e7;
+  margin: 3rem 0;
+}
+
+.the-twoboxes .second-box .shoe-img-3 button {
+  padding: .5rem 2.3rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.the-twoboxes .second-box .shoe-img-3 img {
+  width: 45%;
+}
+
+.the-twoboxes .second-box .shoe-img-3 h1 {
+  margin-right: auto;
+  font-size: 3.8rem;
+  padding-left: 10rem;
+}
+
+.the-twoboxes .second-box .shoe-img-3 h1 .color-left {
+  color: #fd4d5a;
+}
+
+.the-twoboxes .second-box .shoe-img-3 button {
+  display: block;
+  background-color: #fd4d5a;
+  color: #fff;
+  margin-top: 1.6rem;
+}
+
+.six-imagebox {
+  width: 100%;
+  background-color: #fd4d5a;
+  padding: 6rem 0;
+}
+
+.six-imagebox button {
+  padding: .5rem 2.3rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.six-imagebox .main-for-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.six-imagebox .main-for-flex button {
+  display: block;
+  background-color: black;
+  color: #fff;
+  padding: 1rem 3rem;
+}
+
+.six-imagebox .main-for-flex .six-img-box {
+  width: 30%;
+  text-align: center;
+  margin: 2rem 0;
+  background-color: #fff;
+  padding: 4rem 0;
+  position: relative;
+}
+
+.six-imagebox .main-for-flex .six-img-box img {
+  width: 70%;
+}
+
+.six-imagebox .main-for-flex .six-img-box .shoe-price {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+}
+
+.six-imagebox .main-for-flex .six-img-box .stars {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: left;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  width: 50%;
+}
+
+.six-imagebox .main-for-flex .six-img-box .stars img {
+  width: 10%;
+  margin-right: .3rem;
+}
+
+.six-imagebox .main-for-flex .six-img-box p {
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.contact-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 5rem auto;
+  width: 100%;
+  overflow: hidden;
+}
+
+.contact-image h1 {
+  color: black;
+  width: 100%;
+  margin-left: 14rem;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-image .contact-box {
+  width: 40%;
+  background-color: #666666;
+  text-align: center;
+  margin-left: auto;
+  padding-top: 1rem;
+}
+
+.contact-image .contact-box button {
+  padding: .5rem 2.3rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  border: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact-image .contact-box input[type=text] {
+  width: 90%;
+  padding: 1rem 3rem;
+  margin: .8rem 0;
+  border: none;
+  color: white;
+}
+
+.contact-image .contact-box textarea {
+  width: 90%;
+  padding: 5rem 6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+}
+
+.contact-image .contact-box button {
+  display: block;
+  margin: 1rem auto;
+  background-color: #fd4d5a;
+  color: #fff;
+}
+
+.contact-image .contact-imagebox {
+  width: 45%;
+  margin-left: 5%;
+}
+
+footer {
+  width: 100%;
+  background-color: #fd4d5a;
+  text-align: center;
+  padding: 1rem 0;
+  color: #fff;
+  letter-spacing: .1rem;
+}
+
+
+.error{
+  color: white;
+  font-size: 1rem;
+  display: none;
+}
+
+/*media*/
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+    position: absolute;
+    z-index: 99;
+    font-size: 5rem;
+    color: #fff;
+  }
+  header ul {
+    display: none;
+  }
+  header .banner-sideimage .main-contentbox {
+    width: 100%;
+  }
+  .the-twoboxes .second-box {
+    padding: 2rem 2rem;
+  }
+  .the-twoboxes .second-box .shoe-img-3 h1 {
+    padding-left: 6rem;
+  }
+  .the-twoboxes .second-box .shoe-img-3 img {
+    width: 80%;
+  }
+  .the-twoboxes .first-box {
+    padding: 2rem 2rem;
+  }
+  .the-twoboxes .first-box .shoe-img-1 {
+    left: 0;
+    width: 100%;
+  }
+  .the-twoboxes .first-box .shoe-img-2 {
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .the-twoboxes .first-box .shoe-button {
+    margin: 3rem auto 0 auto;
+  }
+  .six-imagebox .main-for-flex .six-img-box {
+    width: 45%;
+  }
+  .contact-image .contact-box {
+    width: 90%;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 600px) {
+  header .banner-sideimage .side-image {
+    margin: 1rem auto;
+  }
+  .six-imagebox .main-for-flex .six-img-box {
+    width: 90%;
+  }
+  .contact-image h1 {
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
